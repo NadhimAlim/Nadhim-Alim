@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2/family=Nadhim+Alim&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Nadhim Alim', cursive;
+
+}
+
+section{
+    height: 100vh;
+
+}
+.nadhimganteng {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    
+}
+
+.nadhimalim{
+    width: 100%;
+    height: 80px;
+    background-color: aquamarine;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.ulna{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+
+}
+
+.nav{
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.nav:hover{
+    background-color: white;
+    transition: all ease-in-out .5s;
+    border-radius: 15px;
+}
+
+.nav:hover > a {
+    color: plum;
+}
+.link {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.alim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 1em;
+}
+
+.purple {
+    background-color: crimson;
+}
+
+.blue {
+    background-color: yellowgreen;
+}
+
+.red{
+    background-color: orange;
+}
+
+.yellow{
+    background-color: palegreen;
+}
+
+.icon{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+   
+
+}
+
+.tombol{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    margin: 12%;
+    border-radius: 60%;
+    box-sizing: 0 5px 15px -5px yellow ;
+    overflow: hidden;
+    position: relative;
+    color: black;
+
+}
+
+.tombol i{
+    transition: 0.2s linear;
+    font-size: 35px;
+    line-height: 90px;
+
+
+}
+
+.tombol:hover i{
+    transform: scale(1.1);
+    color: orangered;
+
+}
+
+.tombol::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -110px;
+    top: 90%;
+    transform: rotate(45deg);
+    background-color: blue;
+
+}
+
+.tombol:hover::before{
+    left: -10%;
+    top: -10%;
+    animation: aaa 0.7s 1;
+}
+
+@keyframes aaa{
+    0%{
+        left: -10%;
+        top: -10%;
+    }
+    0%{
+        left: -10%;
+        top: -10%;
+    }
+    0%{
+        left: -10%;
+        top: -10%;
+    }
+}
+
+.top{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1em;
+    bottom: 20px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    background-color: wheat;
+    border-radius: 25px;
+
+}
